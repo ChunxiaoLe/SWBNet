@@ -1,0 +1,23 @@
+This is the environment requirement for the paper: " A Stable White Balance Network for sRGB Image"
+
+1. Python 3.8.3
+
+2. pytorch (1.8.0)
+
+3. torchvision (0.8.1)
+
+4. tensorboard (optional)
+
+5. numpy 
+
+7. Pillow
+
+8. tqdm
+
+9. matplotlib
+
+10. scipy
+
+11. scikit-learn
+
+
