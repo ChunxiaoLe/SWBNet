@@ -1,7 +1,5 @@
-Testing demo for the paper: " A Stable White Balance Network for sRGB Image"
+Code for the paper: " SWBNet: A Stable White Balance Network for sRGB Image"
 
--------------------------------------------
-The pre-trained model (net.pth) are in "./model"
 
 -------------------------------------------
 "demo.sh": 
