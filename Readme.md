@@ -5,7 +5,7 @@ This paper is proposed to achieve stable white balance for the sRGB images with 
 
 # Results presentation
 <p align="center">
-  <img src="https://github.com/BUPTAQA/bupt_AQA/blob/main/AVA/models/150.jpg" alt="test_photo" width="48%">
+  <img src="https://github.com/ChunxiaoLe/SWBNet/example_images/figure1.png" alt="WB stability visualization" width="48%">
 </p>
 
 -------------------------------------------
