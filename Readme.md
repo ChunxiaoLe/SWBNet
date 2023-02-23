@@ -35,12 +35,20 @@ A. The CTIF extractor and CT-contrastive loss work together to learn the color t
 ### Testing single image
 * Changing '--input' in demo_single_image.py to change input image. The result is save in the folder 'result_images'.
 ```
-python demo_single_image.py --input './example_images/Mobile_00032.png' --output_dir './result_images'
+demo.sh
+python demo_single_image.py --input './example_images/1127_D.JPG' --output_dir './result_images'
 ```
 ### Testing multiple images
+* Changing '--input_dir', '--gt_dir' and '--output_dir' in demo_images.py.
+* The public datasets are available: [Rendered WB dataset (Set1, Set2, Cube)](https://cvil.eecs.yorku.ca/projects/public_html/sRGB_WB_correction/dataset.html)
 ```
-python demo_images.py --input './example_images/Mobile_00032.png' --output_dir './result_images'
+demo.sh
+python demo_images.py --input_dir --gt_dir --output_dir
 ```
+
+## Training
+* Training sRGB image index is collected according to [Deep White-balance Editing (CVPR 2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Afifi_Deep_White-Balance_Editing_CVPR_2020_paper.pdf)
+* It is available: 
 
 
 
