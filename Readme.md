@@ -30,18 +30,19 @@ A. The CTIF extractor and CT-contrastive loss work together to learn the color t
 * scikit-learn
 
 ## Testing
-* Pretrained models: [CTIF](https://pan.baidu.com/s/1wz369LPM1HzpvYhWc7rfhg)(l9el)
+* Pretrained models: [Net_CTIF](https://pan.baidu.com/s/1wz369LPM1HzpvYhWc7rfhg)(l9el)
 * Please download them and put them into the floder ./model/
-* Changing '--input' to change different input images. The result are save in the folder 'result_images'.
-* Do 'sh demo.sh'
+### Testing single image
+* Changing '--input' in demo_single_image.py to change input image. The result is save in the folder 'result_images'.
+```
+python demo_single_image.py --input './example_images/Mobile_00032.png' --output_dir './result_images'
+```
+### Testing multiple images
+```
+python demo_images.py --input './example_images/Mobile_00032.png' --output_dir './result_images'
+```
 
 
--------------------------------------------
-"imgs":
-        Some images are in the folder "example_images".
-        These images are from Rendered Cube dataset.
-        You can use this as the input image of demo.
---------------------------------------------
 
 
 
