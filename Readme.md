@@ -33,7 +33,7 @@ A. The CTIF extractor and CT-contrastive loss work together to learn the color t
 * Pretrained models: [Net_CTIF](https://pan.baidu.com/s/1wz369LPM1HzpvYhWc7rfhg)(l9el)
 * Please download them and put them into the floder ./model/
 ### Testing single image
-* Changing '--input' in demo_single_image.py to change input image. The result is save in the folder 'result_images'.
+* Changing '--input' in demo_single_image.py. The result is save in the folder 'result_images'.
 ```
 demo.sh
 python demo_single_image.py --input './example_images/1127_D.JPG' --output_dir './result_images'
