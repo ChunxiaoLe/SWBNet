@@ -33,16 +33,15 @@ A. The CTIF extractor and CT-contrastive loss work together to learn the color t
 * Pretrained models: [Net_CTIF](https://pan.baidu.com/s/1wz369LPM1HzpvYhWc7rfhg)(l9el)
 * Please download them and put them into the floder ./model/
 ### Testing single image
-* Changing '--input' in demo_single_image.py. The result is save in the folder 'result_images'.
+* To test single image, changing '--input' in demo.sh and run it. The result is save in the folder 'result_images'.
 ```
 demo.sh
 python demo_single_image.py --input './example_images/1127_D.JPG' --output_dir './result_images'
 ```
 ### Testing multiple images
-* Changing '--input_dir', '--gt_dir' and '--output_dir' in demo_images.py.
 * The public datasets are available: [Rendered WB dataset (Set1, Set2, Cube)](https://cvil.eecs.yorku.ca/projects/public_html/sRGB_WB_correction/dataset.html)
+* To test multiple images, changing '--input_dir', '--gt_dir' and '--output_dir' in demo_images.py and run it.
 ```
-demo.sh
 python demo_images.py --input_dir --gt_dir --output_dir
 ```
 
@@ -50,6 +49,7 @@ python demo_images.py --input_dir --gt_dir --output_dir
 * Training data index is collected according to [Deep White-balance Editing (CVPR 2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Afifi_Deep_White-Balance_Editing_CVPR_2020_paper.pdf)
 * Training data index is available: [Training Fold](https://github.com/ChunxiaoLe/SWBNet/blob/master/utilities/train_all_12000_12.npy)
 * Training data can be loaded from: [Training data](https://cvil.eecs.yorku.ca/projects/public_html/sRGB_WB_correction/dataset.html) 
+* To train the model, changing '--training_dir', '--data-name' and '--test-name' in train.py and run it.
 ```
 python train.py --training_dir --data-name --test-name
 ```
