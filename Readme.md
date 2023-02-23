@@ -46,8 +46,8 @@ python demo_images.py --input_dir --gt_dir --output_dir
 ```
 
 ## Training
-* Training data index is collected according to [Deep White-balance Editing (CVPR 2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Afifi_Deep_White-Balance_Editing_CVPR_2020_paper.pdf)
-* Training data index is available: [Training Fold](https://github.com/ChunxiaoLe/SWBNet/blob/master/utilities/train_all_12000_12.npy)
+* Training data fold is formed according to [Deep White-balance Editing (CVPR 2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Afifi_Deep_White-Balance_Editing_CVPR_2020_paper.pdf)
+* Training data fold is available: [Training Fold](https://github.com/ChunxiaoLe/SWBNet/blob/master/utilities/train_all_12000_12.npy)
 * Training data can be loaded from: [Training data](https://cvil.eecs.yorku.ca/projects/public_html/sRGB_WB_correction/dataset.html) 
 * To train the model, changing '--training_dir', '--data-name' and '--test-name' in train.py and run it.
 ```
