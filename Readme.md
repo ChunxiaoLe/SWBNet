@@ -54,6 +54,9 @@ python demo_images.py --input_dir --gt_dir --output_dir
 python train.py --training_dir --data-name --test-name
 ```
 
+# Citation
+* Paper is available: [paper link](https://github.com/ChunxiaoLe/SWBNet/blob/master/paper/9786.ChunxiaoLi.pdf)
+* Citing format is coming soon..
 
 
 
