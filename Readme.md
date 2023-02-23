@@ -1,7 +1,7 @@
 # SWBNet: A Stable White Balance Network for sRGB Image (AAAI2023)
 Authors: Chunxiao Li, Xuejing Kang, Zhifeng Zhang, Anlong Ming*
 
-This paper is proposed to achieve stable white balance for the sRGB images with different color temperatures by learning the color temperature-insensitive features.
+This paper is proposed to achieve stable white balance for the sRGB images with different color temperatures by learning the color temperature-insensitive features. [paper link](https://github.com/ChunxiaoLe/SWBNet/blob/master/paper/9786.ChunxiaoLi.pdf)
 
 # Results presentation
 <p align="center">
