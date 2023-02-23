@@ -1,4 +1,4 @@
-Code for the paper: " SWBNet: A Stable White Balance Network for sRGB Image"
+# Code for the paper: " SWBNet: A Stable White Balance Network for sRGB Image" (AAAI2023)
 
 
 -------------------------------------------
