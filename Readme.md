@@ -5,8 +5,14 @@ This paper is proposed to achieve stable white balance for the sRGB images with 
 
 # Results presentation
 <p align="center">
-  <img src="https://github.com/ChunxiaoLe/SWBNet/blob/master/example_images/1127_D.JPG" alt="WB stability visualization" width="48%">
-  
+  <img src="https://github.com/ChunxiaoLe/SWBNet/blob/master/example_images/figure1.png" alt="WB stability visualization1" width="90%">
+</p>
+Comparing with the state-of-the-art methods, our SWBNet has a stable and superior performance for the sRGB images with different color temperatures. 
+
+
+# Network Structure
+<p align="center">
+  <img src="https://github.com/ChunxiaoLe/SWBNet/blob/master/example_images/figure1.png" alt="WB stability visualization1" width="90%">
 </p>
 
 -------------------------------------------
