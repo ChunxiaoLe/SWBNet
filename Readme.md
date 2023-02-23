@@ -1,5 +1,12 @@
-# Code for the paper: " SWBNet: A Stable White Balance Network for sRGB Image" (AAAI2023)
+# SWBNet: A Stable White Balance Network for sRGB Image (AAAI2023)
+Authors: Chunxiao Li, Xuejing Kang, Zhifeng Zhang, Anlong Ming*
 
+This paper is proposed to achieve stable white balance for the sRGB images with different color temperatures by learning the color temperature-insensitive features.
+
+# Results presentation
+<p align="center">
+  <img src="https://github.com/BUPTAQA/bupt_AQA/blob/main/AVA/models/150.jpg" alt="test_photo" width="48%">
+</p>
 
 -------------------------------------------
 "demo.sh": 
