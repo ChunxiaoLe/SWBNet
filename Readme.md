@@ -47,10 +47,11 @@ python demo_images.py --input_dir --gt_dir --output_dir
 ```
 
 ## Training
-* Training sRGB image index is collected according to [Deep White-balance Editing (CVPR 2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Afifi_Deep_White-Balance_Editing_CVPR_2020_paper.pdf)
-* It is available: [Training Fold](https://github.com/ChunxiaoLe/SWBNet/blob/master/utilities/train_all_12000_12.npy)
+* Training data index is collected according to [Deep White-balance Editing (CVPR 2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Afifi_Deep_White-Balance_Editing_CVPR_2020_paper.pdf)
+* Training data index is available: [Training Fold](https://github.com/ChunxiaoLe/SWBNet/blob/master/utilities/train_all_12000_12.npy)
+* Training data can be loaded from: [Training data](https://cvil.eecs.yorku.ca/projects/public_html/sRGB_WB_correction/dataset.html) 
 ```
-python train.py --input_dir --gt_dir --output_dir
+python train.py --training_dir --data-name --test-name
 ```
 
 
