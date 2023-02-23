@@ -23,13 +23,13 @@ def to_image(image):
 
 def get_args():
     parser = argparse.ArgumentParser(description='Changing WB of an input image.')
-    parser.add_argument('--model_dir', '-m', default='/home/chunxiao/deep_final/PyTorch/models/',
+    parser.add_argument('--model_dir', '-m', default='./models/',
                         help="Specify the directory of the trained model.", dest='model_dir')
     parser.add_argument('--input_dir', '-i', help='Input image directory', dest='input_dir',
-                        default='/dataset/lcx/set1_all1/')
+                        default='')
     parser.add_argument('--gt_dir', '-g', help='GT image directory', dest='gt_dir',
-                        default='/dataset/lcx/set1_all1/')
-    parser.add_argument('--output_dir', '-o', default='/dataset/lcx/cube/Cube_val/',
+                        default='')
+    parser.add_argument('--output_dir', '-o', default='',
                         help='Directory to save the output images', dest='out_dir')
     parser.add_argument('--mxsize', '-S', default=656, type=int,
                         help="Max dim of input image to the network, the output will be saved in its original res.",
@@ -42,10 +42,8 @@ def get_args():
     parser.add_argument('--device', '-d', default='cuda',
                         help="Device: cuda or cpu.", dest='device')
 
-    ### dct123_att1_nofroze_pre_b5_5000new_all_5000_multinet loss_nofroze_pre_net_awb_5000_23_all_5000_23_multinet
     parser.add_argument('-model_name', '--model_name', dest='model_name',
                         default='net_ctif')
-
     parser.add_argument('-type', '--type', dest='type', default='test')  ## dc: 0
     ### Can6 Can1D Fuj IMG Nik40 Nik52 cube 8D5U ALL
     parser.add_argument('-cam', '--camera', dest='camera', default='mul_all',
@@ -63,23 +61,13 @@ if __name__ == "__main__":
     else:
         device = torch.device('cpu')
 
-    "整理数据"
-    # image_dir = []
-    # data_dir = '/home/dataset/lcx/selected images/'
-    # pos = '.jpg'
-    # for fn in os.listdir(data_dir):
-    #     if fn.lower().endswith(pos):
-    #         image_dir.append(fn)
-    #
-    # np.save('/home/chunxiao/deep_final/folds/LSIM.npy', np.array(image_dir))
-
-    save_dir = '/home/dataset/lcx/swb_selected_images/'
+  
+    save_dir = args.output_dir
     if args.save:
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
 
-
-    "输入模型"
+    
     net_awb = deep_wb_model_msa.deepWBNet()
    # net_awb = deep_wb_single_task.deepWBnet()
     logging.info("Loading model {}".format(
@@ -93,8 +81,7 @@ if __name__ == "__main__":
     net_awb.to(device=device)
     net_awb.eval()
 
-    "输入数据"
-    in_list = np.load('/home/chunxiao/deep_final/folds/LSIM.npy')
+    in_list = args.input_dir
     data_dir = '/home/dataset/lcx/selected images/'
 
 
