@@ -40,7 +40,7 @@ demo.sh
 python demo_single_image.py --input './example_images/1127_D.JPG' --output_dir './result_images'
 ```
 ### Testing multiple images
-* The public datasets are available: [Rendered WB dataset (Set1, Set2, Cube)](https://cvil.eecs.yorku.ca/projects/public_html/sRGB_WB_correction/dataset.html)
+* Public datasets are available: [Rendered WB dataset (Set1, Set2, Cube)](https://cvil.eecs.yorku.ca/projects/public_html/sRGB_WB_correction/dataset.html)
 * To test multiple images, changing '--input_dir', '--gt_dir' and '--output_dir' in demo_images.py and run it.
 ```
 python demo_images.py --input_dir --gt_dir --output_dir
